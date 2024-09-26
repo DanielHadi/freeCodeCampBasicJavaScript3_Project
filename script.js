@@ -8,7 +8,7 @@ const checkInput = () => {
     if (getUserinput.value === ""){
         alert("Please provide a phone number");
     } else {
-        const regex = /^(?:1 ?)(?:\(\d{3}\)| \d{3})(?:[- ]?\d{3})(?:[- ]?\d{4})$/g;
+        const regex = /^(?:1 ?(?:\(\d{3}\)|\d{3})(?:[- ]?\d{3})(?:[- ]\d{4})|\d{10}|(?:\(\d{3}\)|\d{3}[-])(\d{3}[-])(\d{4}))$/g;
         if (regex.test(getUserinput.value) == true){
             getResultDiv.innerText = `Valid US number: ${getUserinput.value}`;
             return;
