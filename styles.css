@@ -82,3 +82,11 @@ body {
     font-size: 20px;
     width: 90px;
 }
+
+#button #check-btn:hover{
+    cursor: pointer;
+}
+
+#button #clear-btn:hover{
+    cursor: pointer;
+}
